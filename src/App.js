@@ -28,6 +28,11 @@ let pictureStyle = {
   borderRadius: "50%",
   marginTop: "20px",
 };
+
+const handleName = () => {
+  return alert(infos.fullName);
+};
+
 function App() {
   return (
     <div style={mainDiv}>
@@ -39,6 +44,7 @@ function App() {
         bio={infos.bio}
         prof={infos.profession}
       />
+      {handleName()}
     </div>
   );
 }
